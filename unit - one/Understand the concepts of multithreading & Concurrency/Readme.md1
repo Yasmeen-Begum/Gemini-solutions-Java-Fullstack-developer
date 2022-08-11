@@ -1,6 +1,6 @@
-1.Create a Thread using Thread class and print Thread name.
-----------------------------------------------------------
-program:
+//1.Create a Thread using Thread class and print Thread name.
+//----------------------------------------------------------
+//program:
 
 package fullstack;
 public class Threads extends Thread{
@@ -14,6 +14,6 @@ System.out.println(Thread.currentThread().getName());
 }
 
 
-**********************************************
-output:
-thread-0
+//**********************************************
+//output:
+//thread-0
