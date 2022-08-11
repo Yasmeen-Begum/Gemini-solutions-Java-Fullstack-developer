@@ -9,11 +9,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public class lambdaStream {
-	public static void main(String args[]){
-		List<String> strList= Arrays.asList("a","hello","world","or","program","examples");
+public static void main(String args[]){
+List<String> strList= Arrays.asList("a","hello","world","or","program","examples");
 long num = strList.stream()
 .filter(x -> x.length()> 3)
 .count();
 System.out.print(num);
-	}
+}
 }
