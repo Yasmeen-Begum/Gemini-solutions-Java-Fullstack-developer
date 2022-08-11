@@ -1,0 +1,19 @@
+2.Create a Thread using Runnable Inteface and print the Thread name.
+----------------------------------------------------------------------
+program:
+
+package fullstack;
+public class Runnablethread implements Runnable{
+public static void main(String[] args) {	
+Runnablethread rt=new Runnablethread();
+Thread th=new Thread(rt);
+th.start();	
+}
+public void run() {
+System.out.println(Thread.currentThread().getName());		
+}
+}
+
+*******************************************
+output:
+thread-0
