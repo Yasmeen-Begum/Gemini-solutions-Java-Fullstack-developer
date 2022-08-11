@@ -1,5 +1,6 @@
 2.Create a Thread using Runnable Inteface and print the Thread name.
-----------------------------------------------------------------------
+---------------------------------------------------------------------------------
+
 program:
 
 package fullstack;
