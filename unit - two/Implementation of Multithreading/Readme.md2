@@ -1,0 +1,52 @@
+//Create 5 threads and print "Hello India" using Runnable Interface 
+//-------------------------------------------------------------------------------------------
+//program:
+
+//class:Task.java
+package fullstack;
+public class Task implements Runnable {
+private String task;
+public Task(String task ) {
+this.task=task ;
+}
+@Override
+public void run() {
+System.out.println("Hello India");
+}
+}
+
+//class:RunnablePool.java
+
+package fullstack;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+public class RunnablePool  {
+    static final int MAX_THREADS = 5;              
+
+    public static void main(String[] args) 
+    { 
+        Runnable taskA = new Task("taskA"); 
+        Runnable taskB = new Task("taskB"); 
+        Runnable taskC = new Task("taskC"); 
+        Runnable taskD = new Task("taskD"); 
+        Runnable taskE = new Task("taskE");       
+          
+        ExecutorService pool = Executors.newFixedThreadPool(MAX_THREADS);   
+         
+        pool.execute(taskA); 
+        pool.execute(taskB); 
+        pool.execute(taskC); 
+        pool.execute(taskD); 
+        pool.execute(taskE); 
+        
+        pool.shutdown();     
+    } 
+} 
+
+//*************************************************************************
+//output:
+//Hello India
+//Hello India
+//Hello India
+//Hello India
+//Hello India
