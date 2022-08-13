@@ -1,0 +1,51 @@
+//Create a 5 thread and print "Hello All" using Thread class
+//------------------------------------------------------------
+//program:
+//class:Task.java
+
+package fullstack;
+public class Task extends Thread {
+private String task;
+public Task(String task ) {
+this.task=task ;
+}
+@Override
+public void run() {
+System.out.println("Hello All");
+}
+}
+
+//class:ThreadPool.java
+package fullstack;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+public class ThreadPool  {
+    static final int MAX_THREADS = 5;              
+
+    public static void main(String[] args) 
+    { 
+        Thread taskA = new Task("taskA"); 
+        Thread taskB = new Task("taskB"); 
+        Thread taskC = new Task("taskC"); 
+        Thread taskD = new Task("taskD"); 
+        Thread taskE = new Task("taskE");       
+          
+        ExecutorService pool = Executors.newFixedThreadPool(MAX_THREADS);   
+         
+        pool.execute(taskA); 
+        pool.execute(taskB); 
+        pool.execute(taskC); 
+        pool.execute(taskD); 
+        pool.execute(taskE); 
+        
+        pool.shutdown();     
+    } 
+} 
+
+//**************************************************
+//ouput:
+//Hello All
+//Hello All
+//Hello All
+//Hello All
+//Hello All
