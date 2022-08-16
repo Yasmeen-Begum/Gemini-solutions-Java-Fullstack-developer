@@ -1,0 +1,33 @@
+//Create a program which prints first 10 number using fixed Thread Pool of size 5.Execute them using executor.Describe the behaviour of executor framework.
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------
+//program:
+
+package fullstack;
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+class MyThreads implements Runnable{
+private int i,j;
+MyThreads(int x,int y){
+		i=x;
+		j=y;
+}
+public void run() {
+System.out.print(i+ " "+j+" ");
+}
+}
+public class fixedthreadPool {
+public static void main(String[] args) {
+int nThreads,y;
+ThreadPoolExecutor executor=(ThreadPoolExecutor) Executors.newFixedThreadPool(nThreads=5);
+for(int i=1;i<10;i=i+2) {
+MyThreads t=new MyThreads(i,y=i+1);
+executor.execute(t);
+}
+executor.shutdown();
+}
+}
+
+//**********************************************************************************
+//output:
+//1 2 5 6 9 10 7 8 3 4 
