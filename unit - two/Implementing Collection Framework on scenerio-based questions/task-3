@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 public class UniqueHashset {
 public static void main(String[] args) {
-		HashSet<Integer> hs=new HashSet<>();   
+HashSet<Integer> hs=new HashSet<>();   
 	    hs.add(888);  
 	    hs.add(500);  
 	    hs.add(711); 
