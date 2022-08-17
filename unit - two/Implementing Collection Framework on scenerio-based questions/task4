@@ -1,3 +1,3 @@
-//task-1
-//Write a java program to store group of integers[order of insertion elements does not matters](Hashset)
+//Write a simple program using Queue interface and add 6 integers and print them and remove 2 integral out of it,print the removed elements and existing elements(Stack)
+
 //program:
