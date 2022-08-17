@@ -1,3 +1,24 @@
-//Write a java program to store group of integers[order of insertion elements does not matters](Hashset)
+//Write a java program to store group of integers[order of insertion elements does not matters](HashSet)
 //------------------------------------------------------------------------------------------------------
 //program:
+
+package com.java.Collectionframeworks;
+import java.util.HashSet;  
+public class Hashset {
+public static void main(String args[]){  
+    HashSet<Integer> hs=new HashSet<Integer>();  
+    hs.add(300);  
+    hs.add(200);  
+    hs.add(800);  
+    hs.add(500);  
+    hs.add(700); 
+    hs.add(500); 
+    hs.add(600); 
+    System.out.println(hs);  
+}  
+}  
+   
+
+//******************************************************************************************************
+//output:
+//[800, 500, 200, 600, 300, 700]
