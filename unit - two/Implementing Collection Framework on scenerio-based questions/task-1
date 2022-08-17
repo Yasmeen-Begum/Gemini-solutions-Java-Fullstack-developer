@@ -8,8 +8,6 @@ public class Hashset {
 public static void main(String args[]){  
     HashSet<Integer> hs=new HashSet<Integer>();  
     hs.add(300);  
-    hs.add(200);  
-    hs.add(800);  
     hs.add(500);  
     hs.add(700); 
     hs.add(500); 
@@ -21,4 +19,5 @@ public static void main(String args[]){
 
 //******************************************************************************************************
 //output:
-//[800, 500, 200, 600, 300, 700]
+//[500, 600, 300, 700]
+
