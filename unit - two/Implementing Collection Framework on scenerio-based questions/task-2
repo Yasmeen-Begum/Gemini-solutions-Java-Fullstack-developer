@@ -1,2 +1,24 @@
 //Write a java program to store group of integers[order of insertion elements matters](ArrayList)
+//-----------------------------------------------------------------------------------------------
 //program:
+
+
+package com.java.Collectionframeworks;
+import java.util.ArrayList;
+class Arraylist {
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.add(111);
+        arrayList.add(222);
+        arrayList.add(555);
+        arrayList.add(333);
+        arrayList.add(222);
+        arrayList.add(666);
+       System.out.println(arrayList);
+    }
+}
+
+//************************************************************************************************
+//output:
+//[111, 222, 555, 333, 222, 666]
