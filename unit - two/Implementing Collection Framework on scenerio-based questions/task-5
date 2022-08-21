@@ -1,3 +1,32 @@
 //Write a simple program using Queue interface and add 6 integers and print them and remove 2 integral out of it,print the removed elements and existing elements(Queue)
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //program:
+
+package com.java.Collectionframeworks;
+import java.util.ArrayDeque;
+import java.util.Queue;
+public class queueImplentation {
+public static void main(String[] args) {
+Queue<Integer> q=new ArrayDeque<Integer>();
+q.offer(11);
+q.offer(22);
+q.offer(33);
+q.offer(44);
+q.offer(55);
+q.offer(66);
+System.out.println("Inserted Elements:"+q);
+int rem=q.remove();
+int rem1=q.poll();
+System.out.println("Removed Elements:"+rem+" "+rem1);
+System.out.println("Existing Elements:"+q);
+}
+}
+
+
+//*****************************************************************************
+//output:
+/*
+Inserted Elements:[11, 22, 33, 44, 55, 66]
+Removed Elements:11 22
+Existing Elements:[33, 44, 55, 66]
+*/
