@@ -1,3 +1,55 @@
 //Write a simple program using Queue interface and add 6 integers and print them and remove 2 integral out of it,print the removed elements and existing elements(Stack)
-
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //program:
+
+package com.java.Collectionframeworks;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Iterator;
+public class Task4 {
+public static void main(String args[]) {
+Deque<Integer> q=new ArrayDeque<Integer>();
+		q.add(1);
+		q.add(2);
+		q.add(3);
+		q.add(4);
+		q.add(5);
+		q.add(6);
+		System.out.println("Inserted 6 elements");
+		Iterator<Integer> itr=q.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next()+" ");
+		}
+		System.out.println(" ");
+		System.out.println("Removed elements:");
+		System.out.println(q.removeLast());
+		System.out.println(q.removeLast());
+		System.out.println("Existing elements");
+		itr=q.iterator();
+		while(itr.hasNext()) {
+		System.out.println(itr.next()+" ");	
+}
+}
+}
+
+//*******************************************************************************************
+//output:
+/*Inserted 6 elements
+1 
+2 
+3 
+4 
+5 
+6 
+ 
+Removed elements:
+6
+5
+Existing elements
+1 
+2 
+3 
+4 
+*/
+
+
