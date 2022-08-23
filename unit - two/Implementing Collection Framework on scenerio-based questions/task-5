@@ -15,8 +15,8 @@ q.add(44);
 q.add(55);
 q.add(66);
 System.out.println("Inserted Elements:"+q);
-int rem=q.remove();
-int rem1=q.poll();
+int rem=q.poll();
+int rem1=q.remove();
 System.out.println("Removed Elements:"+rem+" "+rem1);
 System.out.println("Existing Elements:"+q);
 }
