@@ -8,12 +8,12 @@ import java.util.Queue;
 public class queueImplentation {
 public static void main(String[] args) {
 Queue<Integer> q=new ArrayDeque<Integer>();
-q.offer(11);
-q.offer(22);
-q.offer(33);
-q.offer(44);
-q.offer(55);
-q.offer(66);
+q.add(11);
+q.add(22);
+q.add(33);
+q.add(44);
+q.add(55);
+q.add(66);
 System.out.println("Inserted Elements:"+q);
 int rem=q.remove();
 int rem1=q.poll();
